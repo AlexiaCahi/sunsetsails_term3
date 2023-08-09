@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alexia Cahi - Sunset Sails</title>
+    <!--Stylesheets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="scripts/main.js">
+
+  </head>
+  <body>
+
+    <!------------------------------------------------------------------------>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+        <!--Logo-->
+          <a class="navbar-brand" href="assets/logo.png"><img src="assets/logo.png" width="55px" height="40px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Nav items-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trips.html">Browse Trips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="checkout.html">Checkout</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <header>
+        
+      </header>
+      <!----------------------------------------------------------------------------------------------->
+      <!-- Cards -->
+
+      <!-- Card group 1-->
+      <!-- Card 1 -->
+      <div class="card-group">
+        <div class="card">
+            <img src="assets/madagascar.jpg" class="card-img-top" alt="madagascar">
+            <div class="card-body">
+                <h5 class="card-title">Madagascar</h5>
+                <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="assets/cyprus.jpeg" class="card-img-top" alt="cyprus">
+            <div class="card-body">
+                <h5 class="card-title">Cyprus</h5>
+                <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+            </div>
+        </div>
+ 
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="assets/lebanon.jpg" class="card-img-top" alt="lebanon">
+          <div class="card-body">
+            <h5 class="card-title">Lebanon</h5>
+            <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card group 2-->
+      <!-- Card 1 -->
+      <div class="card-group">
+        <div class="card">
+          <img src="assets/rome.jpeg" class="card-img-top" alt="rome">
+          <div class="card-body">
+            <h5 class="card-title">Rome</h5>
+            <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="assets/mauritius.jpg" class="card-img-top" alt="mauritius">
+          <div class="card-body">
+            <h5 class="card-title">Mauritius</h5>
+            <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="assets/seychelles.jpeg" class="card-img-top" alt="seychelles">
+          <div class="card-body">
+            <h5 class="card-title">Seychelles</h5>
+            <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card group 3-->
+      <!-- Card 1 -->
+      <div class="card-group">
+        <div class="card">
+          <img src="assets/france.jpg" class="card-img-top" alt="rome">
+          <div class="card-body">
+            <h5 class="card-title">France</h5>
+            <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="assets/indonesia.jpeg" class="card-img-top" alt="mauritius">
+          <div class="card-body">
+            <h5 class="card-title">Indonesia</h5>
+            <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="assets/spain.jpeg" class="card-img-top" alt="seychelles">
+          <div class="card-body">
+            <h5 class="card-title">Spain</h5>
+            <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- Templates -->
+
+    <template id="tripsCardTempelet">
+        <div class="col-4">
+  
+          <!-- Card -->
+          <div class="card">
+              <img src="assets/madagascar.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title" id="nameText">Madagascar</h4>
+                <p class="card-text" id="priceText">R10 000</p>
+                <p class="card-text mt-4" id="descriptionText">Take a luxurious, tropical trip to Madagascar, this packagage is an all inclusive 9 day trip, children under the age of 12 eat free.</p>
+              </div>
+            </div>
+        </div>
+      </template>
+
+    
+     <!-- Javascript -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+     <script src="scripts/main.js"></script>
+      <!--Disclaimer (no food or drink may be brought onboard) maybe add this to home page (provide identification before getting onboard)-->
+      <!-- Add rules to home page-->
+    </body>
