@@ -49,6 +49,31 @@
         
       </header>
       <!----------------------------------------------------------------------------------------------->
+      <!-- Sort & Filter -->
+
+      <div class="row align-items-center mt-4">
+
+        <!-- Filter Radio Buttons -->
+
+        <div class="btn-group col-auto" role="group">
+          <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
+          <label class="btn btn-outline-success" for="allTripsFilter">All Trips</label>
+        
+          <input type="radio" class="btn-check" name="filterRadio" id="warmWeatherFilter" autocomplete="off" value="cold">
+          <label class="btn btn-outline-success" for="warmWeatherFilter"><i class="bi-weather-warm"></i> Warm Weather</label>
+        
+          <input type="radio" class="btn-check" name="filterRadio" id="coldWeatherFilter" autocomplete="off" value="warm">
+          <label class="btn btn-outline-success" for="coldWeatherFilter"><i class="bi-weather-cold"></i> Cold Weather</label>
+        </div>
+
+        <!-- Sorting Radio Buttons -->
+
+          <input type="radio" class="btn-check" name="sortRadio" id="priceSort" value="low to high" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="priceSort"><i class="bi bi-sort-down-alt"></i> Price: Low to High</label>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------------------------------------>
       <!-- Cards -->
 
       <!-- Card group 1-->
