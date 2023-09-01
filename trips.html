@@ -46,7 +46,10 @@
 
       <!-- Header -->
       <header>
-        
+        <div style="margin-left: 50px; margin-right: 50px; text-align: center;">
+          <h3>The Options are Endless!</h3>
+          <p>Sunset Sails wants whats best for you! We have many different trip options for you to chose from. Each package has a different thing to offer, take the time to view our packages and decide on your dream destination! </p>
+        </div>
       </header>
       <!----------------------------------------------------------------------------------------------->
       <!-- Sort & Filter -->
@@ -55,15 +58,29 @@
 
         <!-- Filter Radio Buttons -->
 
-        <div class="btn-group col-auto" role="group">
+        <div class="btn-group col-auto" role="group" style="margin-left: 550px; margin-bottom: 10px;">
           <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
           <label class="btn btn-outline-success" for="allTripsFilter">All Trips</label>
         
-          <input type="radio" class="btn-check" name="filterRadio" id="warmWeatherFilter" autocomplete="off" value="cold">
-          <label class="btn btn-outline-success" for="warmWeatherFilter"><i class="bi-weather-warm"></i> Warm Weather</label>
+          <input type="radio" class="btn-check" name="filterRadio" id="longTripsFilter" autocomplete="off" value="short">
+          <label class="btn btn-outline-success" for="longTripsFilter"><i class="bi-long-Trips"></i> Long Trips</label>
         
-          <input type="radio" class="btn-check" name="filterRadio" id="coldWeatherFilter" autocomplete="off" value="warm">
-          <label class="btn btn-outline-success" for="coldWeatherFilter"><i class="bi-weather-cold"></i> Cold Weather</label>
+          <input type="radio" class="btn-check" name="filterRadio" id="shortTripsFilter" autocomplete="off" value="long">
+          <label class="btn btn-outline-success" for="shortTripsFilter"><i class="bi-short-Trips"></i> Short Trips</label>
+        </div>
+
+        <!-- Filter Radio Buttons 2nd row -->
+
+        <div class="btn-group col-auto" role="group" style="margin-left: 450px; margin-bottom: 10px;">
+          <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
+          <label class="btn btn-outline-success" for="singleTripsFilter">Single Destination</label>
+        
+          <input type="radio" class="btn-check" name="filterRadio" id="multiTripsFilter" autocomplete="off" value="round">
+          <label class="btn btn-outline-success" for="multiTripsFilter"><i class="bi-multi-Trips"></i> Multi Destination</label>
+        
+          <input type="radio" class="btn-check" name="filterRadio" id="roundTripsFilter" autocomplete="off" value="multi">
+          <label class="btn btn-outline-success" for="roundTripsFilter"><i class="bi-round-Trips"></i> Round Trips</label>
+
         </div>
 
         <!-- Sorting Radio Buttons -->
@@ -83,7 +100,7 @@
             <img src="assets/madagascar.jpg" class="card-img-top" alt="madagascar">
             <div class="card-body">
                 <h5 class="card-title">Madagascar</h5>
-                <p class="card-text"><button type="button" class="btn btn-primary">View More</button></p>
+                <a class="btn btn-primary" href="more.html" role="button" style="margin-left: 140px;">View More</a>
             </div>
         </div>
 
@@ -184,6 +201,15 @@
         </div>
       </template>
 
+       <!--Footer-->
+    <div class="card" style="width: 100%; margin-left: 0px; margin-bottom: 0px; margin-top: 10px; background-color: lightcoral;">
+      <div class="card-body">
+        <h5 class="card-title">Get in Contact:</h5>
+        <p class="card-text"><b>Call:</b> +27 980 8790</p>
+        <p class="card-text"><b>Message:</b> 078 678 5370</p>
+        <p class="card-text"><b>Mail:</b >@sunsetsailstrips.co.za</p>
+      </div>
+    </div>
     
      <!-- Javascript -->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
